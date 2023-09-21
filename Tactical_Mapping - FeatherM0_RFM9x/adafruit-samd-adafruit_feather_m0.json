@@ -1,0 +1,98 @@
+{
+  "commit_hash": "16eb26d73701fd60cadc626d513a2ac942f2f440",
+  "commit_url": "https://github.com/andrewmcdan/Tactical_Mapping/commit/16eb26d73701fd60cadc626d513a2ac942f2f440",
+  "boards": [
+    {
+      "board": "adafruit:samd:adafruit_feather_m0",
+      "sketches": [
+        {
+          "name": "FeatherM0_RFM9x",
+          "compilation_success": true,
+          "sizes": [
+            {
+              "name": "flash",
+              "maximum": 262144,
+              "current": {
+                "absolute": 49784,
+                "relative": 18.99
+              },
+              "previous": {
+                "absolute": 49784,
+                "relative": 18.99
+              },
+              "delta": {
+                "absolute": 0,
+                "relative": 0.0
+              }
+            },
+            {
+              "name": "RAM for global variables",
+              "maximum": "N/A",
+              "current": {
+                "absolute": "N/A",
+                "relative": "N/A"
+              },
+              "previous": {
+                "absolute": "N/A",
+                "relative": "N/A"
+              },
+              "delta": {
+                "absolute": "N/A",
+                "relative": "N/A"
+              }
+            }
+          ],
+          "warnings": {
+            "current": {
+              "absolute": 9
+            },
+            "previous": {
+              "absolute": 9
+            },
+            "delta": {
+              "absolute": 0
+            }
+          }
+        }
+      ],
+      "sizes": [
+        {
+          "name": "flash",
+          "maximum": 262144,
+          "delta": {
+            "absolute": {
+              "minimum": 0,
+              "maximum": 0
+            },
+            "relative": {
+              "minimum": 0.0,
+              "maximum": 0.0
+            }
+          }
+        },
+        {
+          "name": "RAM for global variables",
+          "maximum": "N/A",
+          "delta": {
+            "absolute": {
+              "minimum": "N/A",
+              "maximum": "N/A"
+            },
+            "relative": {
+              "minimum": "N/A",
+              "maximum": "N/A"
+            }
+          }
+        }
+      ],
+      "warnings": {
+        "delta": {
+          "absolute": {
+            "minimum": 0,
+            "maximum": 0
+          }
+        }
+      }
+    }
+  ]
+}
