@@ -14,7 +14,7 @@ current_dir = pathlib.Path(__file__).parent.absolute()
 readme_file = os.path.join(current_dir, "README.md")
 
 # Read the README.md file
-with open(readme_file, "r") as f:
+with open(readme_file, "r+") as f:
     lines = f.readlines()
     found = false
     for i, line in enumerate(lines):
