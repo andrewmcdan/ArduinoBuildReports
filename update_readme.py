@@ -16,12 +16,14 @@ readme_file = os.path.join(current_dir, "README.md")
 # Read the README.md file
 with open(readme_file, "r+") as f:
     lines = f.readlines()
-    found = false
+    found = False
     for i, line in enumerate(lines):
         if line.startswith("[//]: # (" + project_name + ")"):
-            found = true
+            found = True
             break
     if not found:
         # Add the project name and workflow url to the README.md file
-        lines.append("[//]: # (" + project_name + ")\n")
+        lines.append("\n\n[//]: # (" + project_name + ")\n")
         lines.append("[![Build Status of Last Commit](" + workflow_url + "/badge.svg)](" + workflow_url + ")\n\n")
+with open(readme_file, "w") as f:
+    f.writelines(lines)
