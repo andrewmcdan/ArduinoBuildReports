@@ -2,7 +2,7 @@ import os
 import pathlib
 import sys
 
-if len(sys.argv) != 2:
+if len(sys.argv) != 3:
     print("Usage: python update_readme.py <project name> <workflow url>")
     sys.exit(1)
 else:
