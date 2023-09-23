@@ -23,8 +23,12 @@ with open(readme_file, "r+") as f:
             break
     if not found:
         # Add the project name and workflow url to the README.md file
+        repo_url = workflow_url[:workflow_url.rfind("/actions")]
+        # Add the project name and workflow url to the README.md file
         lines.append("\n\n[//]: # (" + project_name + ")\n")
-        lines.append("## " + project_name + "\n\n")
+        lines.append("## [" + project_name + "]("+ repo_url +")\n\n")
+        # Add the build status badge
         lines.append("[![Build Status of Last Commit](" + workflow_url + "/badge.svg)](" + workflow_url + ")\n\n")
+# Write the README.md file
 with open(readme_file, "w") as f:
     f.writelines(lines)
